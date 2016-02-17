@@ -2,7 +2,7 @@
 
 Example of the tree view control jstree packaged for meteor.
 
-![ScreenShot](https://raw.github.com/tobkle/meteor-jstree-example/master/public/images/meteor-jstree-example.png)
+![ScreenShot](https://raw.github.com/r-tiger/meteor-jstree-example/master/public/images/meteor-jstree-example.png)
 
 ## Features
 
@@ -14,16 +14,7 @@ Example of the tree view control jstree packaged for meteor.
 
 ## Getting Started
 
-Clone this repository and add the following packages by...
-
-```code
-mrt add bootstrap-3
-mrt add meteor-jstree
-```
-
-## Status
-
-... Draft version. Work in progress...
+Clone this repository and run meteor...
 
 ## Documentation
 
@@ -32,7 +23,6 @@ For a complete list of configuration options, events and available functions ref
 [demo]: http://jstree.com/demo
 
 ## License
-Copyright (c) 2014 tobkle
 
 Licensed under the [MIT license][mit].
 [mit]: http://www.opensource.org/licenses/mit-license.php

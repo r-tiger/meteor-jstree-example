@@ -1,8 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////
 //    jquery.ui.tree plugin
 ///////////////////////////////////////////////////////////////////////////////////////
-// Author: tobkle
-// Date:   08.03.2014
 // Version: 1.0
 ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -21,7 +19,7 @@
             data:           [],
             search:         {},
             "core" : {
-                "animation"               : 0,
+                "animation"               : 500,
                 "check_callback"          : true,
                 "themes"                  : { "stripes" : true },
                 'data'                    : []
@@ -43,7 +41,7 @@
                 "file" : {
                     "icon"              : "glyphicon glyphicon-file",
                     "valid_children"    : []
-                },
+                }
             },
             "contextmenu" : {
                     "items" : function (o, cb) {
@@ -260,7 +258,7 @@
                     'position'      : 0,
                     'text'          : _tree,
                     'tree'          : _tree,
-                    'type'          : 'root',
+                    'type'          : 'root'
                    };
         },
 
@@ -288,7 +286,7 @@
                         type:       parent.node.type,
                         parent:     parent.parent,
                         position:   parent.position,
-                        tree:       parent.node.original.tree,
+                        tree:       parent.node.original.tree
                     },
                     $(this)
                 );

@@ -1,16 +1,9 @@
-//
-// Name:    meteor-jstree-example
-// Author:  tobkle
-// Date:    28.02.2014
-// Version: 1.0
-//
-
 Nodes1 = {};
 Nodes2 = {};
 Search1 = {};
 Search2 = {};
 
-Template.showtree.rendered  = function(){
+Template.showtree.onRendered(function () {
     var self  = this;
     var nodes = [];
 
@@ -18,14 +11,14 @@ Template.showtree.rendered  = function(){
     Nodes2  = $('#tree2').tree();
 
     if (!self.handle){
-        self.handle = Meteor.autorun(function(){
+        self.handle = Tracker.autorun(function(){
             // refresh trees on new data
             nodes = Nodes.find();
             Nodes1.tree('option', 'data', 'Projects');
             Nodes2.tree('option', 'data', 'Contexts');
         }); //self.handle
     } // if (!self.handle)
-}
+});
 
 // Returns an event map that handles the "escape" and "return" keys and
 // "blur" events on a text input (given by selector) and interprets them

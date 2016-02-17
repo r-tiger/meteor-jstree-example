@@ -1,7 +1,3 @@
-/**
- * Created by tobkle on 23.02.14.
- */
-
 Nodes      = new Meteor.Collection('nodes');
 
 Meteor.methods({

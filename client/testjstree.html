@@ -2,15 +2,15 @@
   <title>meteor-jstree-example</title>
 </head>
 
-<template name="layout">
+<template name="ApplicationLayout">
     <div class="container">
-        {{yield}}
+            {{> yield}}
     </div>
 </template>
 
 <template name="loading">
     <div class="row">
-        <p>Bitte warten....</p>
+        <p>Please waite....</p>
     </div>
 </template>
 
@@ -74,12 +74,12 @@
 
     <div class="row">
         <p></p>
-        <div><a href="https://github.com/vakata/jstree">github </a><a href="http://www.jstree.com"> documentation</a></div>
+        <div><a href="https://github.com/r-tiger/meteor-jstree-example">github </a><a href="http://www.jstree.com"> documentation</a></div>
     </div>
 
     <div class="row">
-        <p>(c) 2014 jstree        by <a href="(http://vakata.com)">Ivan Bozhanov</a> <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>
-      <br/>(c) 2014 meteor-jstree by <a href="https://github.com/tobkle/meteor-jstree-example">tobkle</a> <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></p>
+       <p>
+      <br/>(c) 2016 meteor-jstree-example by <a href="https://github.com/r-tiger/meteor-jstree-example"></a> <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></p>
     </div>
 
 
